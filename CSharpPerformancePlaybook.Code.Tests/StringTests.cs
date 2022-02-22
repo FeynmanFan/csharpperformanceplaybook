@@ -21,6 +21,45 @@ namespace CSharpPerformancePlaybook.Code.Tests
         }
 
         [Fact]
+        public void NaiveSplitName()
+        {
+            var name = "Behrens, Chris";
+            var worker = new StringWorker();
+
+            var lastName = worker.NaiveSplitName(name).lastName;
+            var firstName = worker.NaiveSplitName(name).firstName;
+
+            Assert.Equal("Behrens", lastName);
+            Assert.Equal("Chris", firstName);
+        }
+
+        [Fact]
+        public void SplitSplitName()
+        {
+            var name = "Behrens, Chris";
+            var worker = new StringWorker();
+
+            var lastName = worker.SplitSplitName(name).lastName;
+            var firstName = worker.SplitSplitName(name).firstName;
+
+            Assert.Equal("Behrens", lastName);
+            Assert.Equal("Chris", firstName);
+        }
+
+        [Fact]
+        public void SpanSplitName()
+        {
+            var name = "Behrens, Chris";
+            var worker = new StringWorker();
+
+            var lastName = worker.SpanSplitName(name).lastName;
+            var firstName = worker.SpanSplitName(name).firstName;
+
+            Assert.Equal("Behrens", lastName);
+            Assert.Equal("Chris", firstName);
+        }
+
+        [Fact]
         public void FunctionsAreEquivalent()
         {
             var sw = new StringWorker();
