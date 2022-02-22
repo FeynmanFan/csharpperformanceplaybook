@@ -16,5 +16,23 @@ namespace CSharpPerformancePlaybook.Benchmarker
         {
             var x = new StringWorker().BuildStringBetter("test");
         }
+
+        [Benchmark()]
+        public void NaiveSplit()
+        {
+            var x = new StringWorker().NaiveSplitName("Behrens, Chris");
+        }
+
+        [Benchmark()]
+        public void SplitSplit()
+        {
+            var x = new StringWorker().SplitSplitName("Behrens, Chris");
+        }
+
+        [Benchmark()]
+        public void SpanSplit()
+        {
+            var x = new StringWorker().SpanSplitName("Behrens, Chris");
+        }
     }
 }
