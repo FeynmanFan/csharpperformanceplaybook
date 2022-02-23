@@ -20,12 +20,43 @@
         public void ThousandClasses()
         {
             var classes = Names.Select(x => new PersonClass { Name = x });
+
+            for (var i = 0; i < classes.Count(); i++)
+            {
+                var x = classes.ElementAt(i).Name;
+            }
         }
 
         [Benchmark]
         public void ThousandStructs()
         {
-            var classes = Names.Select(x => new PersonStruct { Name = x });
+            var structs = Names.Select(x => new PersonStruct { Name = x });
+
+            for (var i = 0; i < structs.Count(); i++)
+            {
+                var x = structs.ElementAt(i).Name;
+            }
+        }
+        [Benchmark]
+        public void ThousandRecordClasses()
+        {
+            var classes = Names.Select(x => new PersonRecord(x));
+
+            for (var i = 0; i < classes.Count(); i++)
+            {
+                var x = classes.ElementAt(i).Name;
+            }
+        }
+
+        [Benchmark]
+        public void ThousandRecordStructs()
+        {
+            var structs = Names.Select(x => new PersonStructRecord (x));
+
+            for (var i = 0; i < structs.Count(); i++)
+            {
+                var x = structs.ElementAt(i).Name;
+            }
         }
     }
 }

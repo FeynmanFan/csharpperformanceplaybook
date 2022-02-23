@@ -1,0 +1,13 @@
+somefile.txt	1
+otherfile.txt	0
+myfile.txt	1
+worddoc.docx	0
+something.txt	0
+this.txt	0
+that.txt	1
+theother.txt	1
+code.txt	0
+recipes.txt	1
+picture.jpeg	1
+file.txt	1
+permsfile.txt	0
