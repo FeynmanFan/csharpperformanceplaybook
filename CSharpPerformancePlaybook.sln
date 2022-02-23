@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPerformancePlaybook.C
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPerformancePlaybook.Code", "CSharpPerformancePlaybook.Code\CSharpPerformancePlaybook.Code.csproj", "{A9648C7A-F881-4C57-8446-51E41B0DE3E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPerformancePlaybook.Benchmarker", "CSharpPerformancePlaybook.Benchmarker\CSharpPerformancePlaybook.Benchmarker.csproj", "{E1A62E9B-1F5B-4116-848E-F9EF4E2C476F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPerformancePlaybook.Benchmarker", "CSharpPerformancePlaybook.Benchmarker\CSharpPerformancePlaybook.Benchmarker.csproj", "{E1A62E9B-1F5B-4116-848E-F9EF4E2C476F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPerformancePlaybook.Benchmarker.Tests", "CSharpPerformancePlaybook.Benchmarker.Tests\CSharpPerformancePlaybook.Benchmarker.Tests.csproj", "{513D4B27-BA69-475B-A414-2D3E1FE2C491}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{E1A62E9B-1F5B-4116-848E-F9EF4E2C476F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E1A62E9B-1F5B-4116-848E-F9EF4E2C476F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E1A62E9B-1F5B-4116-848E-F9EF4E2C476F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{513D4B27-BA69-475B-A414-2D3E1FE2C491}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{513D4B27-BA69-475B-A414-2D3E1FE2C491}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{513D4B27-BA69-475B-A414-2D3E1FE2C491}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{513D4B27-BA69-475B-A414-2D3E1FE2C491}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
