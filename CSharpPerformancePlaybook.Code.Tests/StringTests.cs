@@ -1,5 +1,6 @@
 namespace CSharpPerformancePlaybook.Code.Tests
 {
+    using System;
     using Xunit;
 
     public class StringTests
@@ -68,6 +69,22 @@ namespace CSharpPerformancePlaybook.Code.Tests
             var sbetter = sw.BuildStringBetter("test");
 
             Assert.Equal(sbad, sbetter);
+        }
+
+        [Fact]
+        public void DateStuff()
+        {
+            string dateString = "2022-02-22";
+
+            ReadOnlySpan<char> dateSpan = dateString.AsSpan();
+
+            var year = int.Parse(dateSpan.Slice(0, 4));
+            var month = int.Parse(dateSpan.Slice(5, 2));
+            var day = int.Parse(dateSpan.Slice(8, 2));
+
+            Assert.Equal(2022, year);
+            Assert.Equal(2, month);
+            Assert.Equal(22, day);
         }
     }
 }

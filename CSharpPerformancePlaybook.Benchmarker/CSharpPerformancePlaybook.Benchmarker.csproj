@@ -9,10 +9,12 @@
 
   <ItemGroup>
     <PackageReference Include="BenchmarkDotNet" Version="0.13.1" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\CSharpPerformancePlaybook.Code\CSharpPerformancePlaybook.Code.csproj" />
+    <ProjectReference Include="..\CSharpPerformancePlaybook.EFCore\CSharpPerformancePlaybook.EFCore.csproj" />
   </ItemGroup>
 
   <ItemGroup>
