@@ -1,3 +1,3 @@
-# C# Performance Playbook Repo
+# C# Performance Playbook
 
-This contains the source code used in the Course C# 10 Performance Playbook from Pluralsight. I offer this code free for any use of any kind without license - feel free to fork it or use it to make a million dollars (somehow).
+This is the repo for the Pluralsight course "C# 10 Performance Playbook". Feel free to use this code for any purpose, including forking or making a million dollars with it.
