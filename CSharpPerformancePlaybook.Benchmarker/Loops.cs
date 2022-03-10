@@ -4,6 +4,7 @@
     using BenchmarkDotNet.Mathematics;
     using BenchmarkDotNet.Order;
 
+    [ShortRunJob]
     [Orderer(SummaryOrderPolicy.FastestToSlowest)]
     [RankColumn(NumeralSystem.Arabic)]
     public class Loops
@@ -18,25 +19,45 @@
             }
         }
 
-        [Benchmark]
-        public void ForLoop()
+        //[Benchmark]
+        //public void ForLoop()
+        //{
+        //    var names = Names;
+
+        //    var length = names.Count();
+
+        //    for(var i = 0; i < length; i++)
+        //    {
+        //        var x= names[i];
+        //    }
+        //}
+
+        //[Benchmark]
+        //public void ForEachLoop()
+        //{
+        //    var names = Names;
+
+        //    foreach (var name in names)
+        //    {
+        //        var x = name;
+        //    }
+        //}
+
+        [Benchmark()]
+        public void LoopThroughNames()
         {
-            var names = Names;
-
-            var length = names.Count();
-
-            for(var i = 0; i < length; i++)
+            for(var i = 0; i < Names.Count; i++)
             {
-                var x= names[i];
+                var x = Names[i];
             }
         }
 
-        [Benchmark]
-        public void ForEachLoop()
+        [Benchmark(Baseline = true)]
+        public void CachedLoop()
         {
-            var names = Names;
+            var names = Names.ToList();
 
-            foreach (var name in names)
+            foreach(var name in names)
             {
                 var x = name;
             }

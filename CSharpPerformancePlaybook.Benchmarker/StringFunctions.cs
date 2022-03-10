@@ -1,38 +1,34 @@
-﻿using CSharpPerformancePlaybook.Code;
-using BenchmarkDotNet.Attributes;
+﻿using BenchmarkDotNet.Attributes;
 
 namespace CSharpPerformancePlaybook.Benchmarker
 {
     public class StringFunctions
     {
+        string[] words = { "This", "is", "a", "test" };
+
         [Benchmark()]
-        public void BuildStringBadly()
+        public void PoorlyPerformingStringFunction()
         {
-            var x = new StringWorker().BuildStringBadly("test");
+            string resultString = string.Empty;
+
+            foreach(var word in words)
+            {
+                resultString += word + " ";
+            }
+
+            Console.WriteLine(resultString.Trim());
         }
 
         [Benchmark()]
-        public void BuildStringBetter()
+        public void stringjoin()
         {
-            var x = new StringWorker().BuildStringBetter("test");
+            Console.WriteLine(string.Join(' ', words));
         }
 
         [Benchmark()]
-        public void NaiveSplit()
+        public void SBJoin()
         {
-            var x = new StringWorker().NaiveSplitName("Behrens, Chris");
-        }
-
-        [Benchmark()]
-        public void SplitSplit()
-        {
-            var x = new StringWorker().SplitSplitName("Behrens, Chris");
-        }
-
-        [Benchmark()]
-        public void SpanSplit()
-        {
-            var x = new StringWorker().SpanSplitName("Behrens, Chris");
+            Console.WriteLine(new System.Text.StringBuilder().AppendJoin(' ', words));
         }
     }
 }
