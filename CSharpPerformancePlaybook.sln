@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPerformancePlaybook.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPerformancePlaybook.Benchmarker.Tests", "CSharpPerformancePlaybook.Benchmarker.Tests\CSharpPerformancePlaybook.Benchmarker.Tests.csproj", "{513D4B27-BA69-475B-A414-2D3E1FE2C491}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{AD6DBA1F-A145-4636-91BB-FC6E683EF080}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{AD6DBA1F-A145-4636-91BB-FC6E683EF080}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpPerformancePlaybook.EFCore", "CSharpPerformancePlaybook.EFCore\CSharpPerformancePlaybook.EFCore.csproj", "{5F686B48-2256-4FD3-8CD1-D800A0E245B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharpPerformancePlaybook.EFCore", "CSharpPerformancePlaybook.EFCore\CSharpPerformancePlaybook.EFCore.csproj", "{5F686B48-2256-4FD3-8CD1-D800A0E245B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
